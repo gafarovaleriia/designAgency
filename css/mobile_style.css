@@ -1,0 +1,172 @@
+@media all and (max-width: 900px) {
+    nav {
+        display: none;
+    }
+    .phone-header {
+        margin-right: 18px;
+    }
+    .logo {
+        margin-left: 18px;
+    }
+    .header {
+        height: 53px;
+    }
+    .title {
+        font-size: 23px;
+        line-height: 135.84%;
+    }
+    .home-container {
+        padding: 85px 18px 0;
+    }
+    .main-text {
+        font-size: 14px;
+        line-height: 135.84%;
+        width: 329px;
+        height: 94px;
+    }
+    .images-gallery {
+        width: 340px;
+        height: 241px;
+        background-image: url("../image/image2.png");
+        background-size: cover;
+        margin: 36px auto 0;
+    }
+    .image-projects {
+        display: none;
+    }
+
+    .request {
+        width: 338px;
+        margin: 0 auto;
+    }
+    .application {
+        margin-top: 26px;
+    }
+    .button-header {
+        display: none;
+    }    
+    .phone-header {
+        color: #FFF;
+    }
+    .home {
+        height: 476px;
+    }
+    .projects {
+        height: 727px;
+    }
+    .title__projects {
+        text-align: center;
+        padding-top: 36px;
+    }
+    .text__projects {
+        width: 311px;
+        height: 86px;
+        font-size: 11px;
+        line-height: 158.48%;
+        text-align: center;
+        padding: 22px 32px 0;
+    }
+    
+    .table__projects {
+        padding-top: 36px;
+        margin-left: 18px;
+    }
+    .swiches {
+        display: none;
+    }
+    .row-header {
+        font-size: 14px;
+        line-height: 138.6%;
+    }
+    .table-row__projects {
+        font-size: 11px;
+        line-height: 135.84%;
+    }
+    
+}
+@media all and (max-width: 600px) {
+    .heading__online-control {
+        font-size: 22px;
+        line-height: 138.6%;
+        text-align: left;
+        margin-left: 76px;
+        margin-top: -400px;
+    }
+    .img-camera {
+        width: 110px;
+        margin: 0 131px 0;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .camera__online-control {
+        width: 340px;
+        height: 207px;
+        margin-left: 18px;
+    }
+    .blackout {
+        width: 345px;
+        height: 207px;
+        padding-right: 600px;
+        padding-left: 15px;
+    }
+    .circle-play {
+        margin-left: 150px;
+        margin-top: -170px;
+    }
+    .online-control {
+        background-color: #131313;
+    }
+    .band-3 {
+        margin: 0;
+        padding-left: 160px;
+        margin-top: 100px;
+    }
+    .text__online-control {
+        font-size: 11px;
+        line-height: 169.8%;
+        color: #FFF;
+        width: 340px;
+        height: 106px;
+        margin: 20px 18px 0;
+    }
+    .form__online-control {
+        display: flex;
+        flex-direction: column;
+        padding-left: 18px;
+    }
+    .name-form__online-control {
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .phone-form__online-control {
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .input__online-control {
+        background-color: #131313;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+        width: 340px;
+        font-size: 14px;
+        line-height: 138.72%;
+        padding: 15px 0;
+    }
+    ::placeholder {
+        color: #FFF;
+    }
+    .form-checkbox__online-control {
+        
+    }
+}
+@media all and (max-width: 375px) {
+    .request {
+        width: 290px;
+    }
+    .main-text {
+        width: 280px;
+    }
+}
