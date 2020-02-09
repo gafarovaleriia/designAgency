@@ -23,6 +23,7 @@
         line-height: 135.84%;
         width: 329px;
         height: 94px;
+        max-width: 100%;
     }
     .images-gallery {
         width: 340px;
@@ -158,8 +159,39 @@
     ::placeholder {
         color: #FFF;
     }
-    .form-checkbox__online-control {
-        
+    .choice__types-of-repair {
+        display: flex;
+        flex-direction: column;
+    }
+    .list-item__types-of-repair {
+        display: none;
+    }
+    .form__types-of-repair {
+        display: none;
+    }
+    .reviews {
+        display: none;
+    }
+    .contacts-container {
+        margin-top: 250px;
+    }
+    .feedback {
+        margin-top: 0;
+    }
+    .form__feedback {
+        display: flex;
+        flex-direction: column;
+    }
+    .input__form__types-of-repair {
+        width: 340px;
+    }
+    .contacts__item {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .map__contacts {
+        width: 340px;
+        height: 255px;
     }
 }
 @media all and (max-width: 375px) {
