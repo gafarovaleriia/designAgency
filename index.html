@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum scale=1.0, user scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mobile_style.css" rel="stylesheet">
+   
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Design Agency</title>
 </head>
 <body>
-     <header class="header">
+    <header class="header">
         <div class="container header-cotent">
         <div class="logo">IC "REPAIR DESIGN PROJECTS"</div>
         <nav>
@@ -24,8 +25,8 @@
                 <li class="header-navigation__item"><a href="#">CONTACTS</a></li>
             </ul>
         </nav>
-        <div class="phone-header">+7 (928) 768-32-39</div>
-        <button class="button">REQUEST A CALL</button>
+        <div class="phone-header"><a class="phone-header" href="">+7 (928) 768-32-39</a></div>
+        <button class="button button-header">REQUEST A CALL</button>
         </div>
     </header>
     <main>
@@ -51,6 +52,7 @@
                 <p class="text__projects">
                     Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction</br> market we have made happy more than 1000 families
                 </p>
+                <div class="images-gallery"></div>
                 <table class="table__projects">
                     <tr>
                         <td class="row-header">CITY:</td>
@@ -74,13 +76,14 @@
                     </tr>
                 </table>
                 <div class="swiches">
-                    <div class="left arrow__swiches">&#8592;</div>
-                    <div class="circle-swich">
-                        <div class="circle-swich1">&#9898;</div>
-                        <div class="circle-swich2">&#9899;</div>
-                        <div class="circle-swich3">&#9899;</div>
+                    <a class="left arrow__swiches" onclick="plusSlides(-1)">&#8592;</a>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
-                    <div class="right arrow__swiches">&#8594;</div>
+                    <a class="right arrow__swiches" onclick="plusSlides(1)">&#8594;</a>
+                   
                 </div>
             </div>
                 <div class="image-projects">
@@ -90,6 +93,8 @@
                         <li class="title__image-projects"><a href="#">ROSTOV-ON-DON PATRIOTIC</a></li>
                     </ul>
                     <img class="image__image-projects" src="image/image2.1.png" width="679" height="482" />
+                    <img class="image__image-projects img-pr1" src="image/image2.png" width="679" height="482" />
+                    <img class="image__image-projects img-pr2" src="image/image3.png" width="679" height="482" />
                 </div>
             </div>
         </section>
@@ -97,16 +102,18 @@
             <div class="container online-control">
                 <div class="online-camera__online-control">
                     <h2 class="title heading__online-control">ONLINE CONTROL</h2>
-                    <div class="img-camera">
-                        <img class="band-1" src="image/Rectangle6.7.png" />
+                    <div class="vector img-camera">
+                        <img class="band-1" src="image/Rectangle6.7.svg" />
                         <img class="camera" src="image/Vector.png" />
-                        <img class="band-2" src="image/Rectangle6.7.png" />
+                        <img class="band-2" src="image/Rectangle6.7.svg" />
                     </div>    
-                    <img class="camera__online-control" src="image/image6.png" width="817" height="434" />
-                    <img class="blackout" src="image/Rectangl4.15.png" width="817" height="434" />
+                    <div class="images__online-control">
+                        <img class="camera__online-control" src="image/image6.png" width="817" height="434" />
+                        <img class="blackout" src="image/Rectangl4.15.png" width="817" height="434" />
                     <div class="circle-play"><img class="snap__circle-play" src="image/Polygon.png" /></div>
+                    </div>
                 </div>    
-                <img class="band-3" src="image/Rectangle6.7.png" />
+                <img class="band-3" src="image/Rectangle6.7.svg" />
                 <p class="text__online-control">
                     At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
                 </p>
@@ -118,17 +125,18 @@
                     <input class="button button-form" type="submit" value="SUBMIT" />
                 </form>
                 <form class="form-checkbox__online-control" action="">
-                    <label class="checkbox__online-control"><input class="checkbox__online-control agreement" type="checkbox" name="agreement" value="agreement" checked="checked" />I agree to the processing of personal data</label>
+                        <input type="checkbox" id="agreement" name="agreement" />
+                        <label for="agreement" class="accord">I agree to the processing of personal data</label>
                 </form>
             </div>
         </section>
         <section class="types-of-repair">
             <div class="container types-of-repair">
                 <h3 class="title heading__types-of-repair">TYPES OF REPAIR</h3>
-                <div class="img-repair">
-                    <img class="band-1" src="image/Rectangle6.7.png" />
+                <div class="vector img-repair">
+                    <img class="band-1" src="image/Rectangle6.7.svg" />
                     <img class="repairs camera" src="image/Repair.png" />
-                    <img class="band-2" src="image/Rectangle6.7.png" />
+                    <img class="band-2" src="image/Rectangle6.7.svg" />
                 </div>    
                 <div class="choice__types-of-repair">
                     <div class="redecorating">
@@ -143,8 +151,8 @@
                                 <li class=lists__types-of-repair>Replacing sockets and switches</li>
                                 <li class=lists__types-of-repair>Replacing doors </li>
                             </ul>
+                        <div class="nameplate__types-of-repair">FROM 900 RUB / M2</div>
                         </div>
-                        <button class="button title button__types-of-repair">FROM 900 RUB / M2</button>
                     </div>
                     <div class="overhaul">
                         <img class="img-redecorating" src="image/overhaul.jpg" width="392" height="421" />
@@ -158,10 +166,9 @@
                                 <li class=lists__types-of-repair>Replacing sockets and switches</li>
                                 <li class=lists__types-of-repair>Replacing doors </li>
                             </ul>
-                        </div>
-                        <button class="button title button__types-of-repair">FROM 1800 RUB / M2</button>
+                        <div class="nameplate__types-of-repair">FROM 1800 RUB / M2</div>
                     </div>
-
+                    </div>
                     <div class="designer-repair">
                         <img class="img-redecorating" src="image/designer-repair.jpg" width="392" height="421" />
                         <div class="sheet sheet__designer-repair">
@@ -174,16 +181,16 @@
                                 <li class=lists__types-of-repair>Replacing sockets and switches</li>
                                 <li class=lists__types-of-repair>Replacing doors </li>
                             </ul>
-                        </div>
-                        <button class="button title button__types-of-repair">FROM 4000 RUB / M2</button>
-                    </div>   
+                        <div class="nameplate__types-of-repair">FROM 4000 RUB / M2</div>
+                    </div> 
+                    </div> 
                 </div>
                 <div class="list-item__types-of-repair">
-                    <ol class="sheet__types-of-repair">
-                        <li class="sheet-list__types-of-repair"><span class="num-list">01</span>Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</li class="sheet-lst__types-of-repair">
-                        <li class="sheet-list__types-of-repair"><span class="num-list">02</span>Free metering</li>
-                        <li class="sheet-list__types-of-repair"><span class="num-list">03</span>Free consultation</li>
-                        <li class="sheet-list__types-of-repair"><span class="num-list">04</span>Get a cost estimate and</br> the timing of your future repairs </li>
+                    <ol class="advantages__types-of-repair">
+                        <li class="item__types-of-repair"><span class="num-list">01</span>Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</li>
+                        <li class="item__types-of-repair"><span class="num-list">02</span>Free metering</li>
+                        <li class="item__types-of-repair"><span class="num-list">03</span>Free consultation</li>
+                        <li class="item__types-of-repair"><span class="num-list">04</span>Get a cost estimate and</br> the timing of your future repairs </li>
                     </ol>
                 </div>
                 <form class="form__types-of-repair" action="#">
@@ -198,7 +205,7 @@
                     <input class="button button-form__types-of-repair" type="submit" value="CALL THE MEASURER" />
                 </form>
                 <div class="sale">
-                    <img class="img-sale" src="image/Grouppig.png" width="40" height="33" />
+                    <img class="img-sale" src="image/Grouppig.svg" width="40" height="33" />
                     <div class="circle-sale"></div>
                     <p class="text-sale">Help save 10 - 20% of the</br> cost of materials</p>
                 </div>
@@ -207,10 +214,10 @@
         <section class="reviews">
             <div class="container reviews">
                 <h3 class="title heading__reviews">OUR CLIENTS</h3>
-                <div class="img-vector__reviews">
-                    <img class="band-1" src="image/Rectangle6.7.png" />
-                    <img class="vector__our-clients" src="image/Group.png" />
-                    <img class="band-2" src="image/Rectangle6.7.png" />
+                <div class="vector img-vector__reviews">
+                    <img class="band-1" src="image/Rectangle6.7.svg" />
+                    <img class="vector__our-clients" src="image/Group.svg" />
+                    <img class="band-2" src="image/Rectangle6.7.svg" />
                 </div> 
                 <p class="text__reviews">80% of our customers recommend us to their friends and family.</p>
                 <div class="list__reviews">
@@ -252,16 +259,18 @@
                         <label class="question forms__feedback">Question</br>
                         <input class="question input__form__feedback" type="question" name="question" placeholder="I want to know:" /></label>    
                     </div>
-                        <label class="checkbox__feedback"><input class="checkbox__types-of-repair agreement2" type="checkbox" name="agreement" value="agreement" checked="checked" />I agree to the processing of personal data</label>
+                        <label class="checkbox__feedback"><input class="checkbox__feedback" type="checkbox" name="agreement" value="agreement" checked="checked" />I agree to the processing of personal data</label>
                     <input class="button button-form__feedback" type="submit" value="SUBMIT" />
                 </form>
                </div>
+            <div class="contacts__item">
             <p class="title text__contacts">ROSTOV-ON-DON, NANSEN ST., 239 SHOPPING CENTER</br> DECORUM TEL +7 (928) 768 32 29</p>
             <div class="img-badges">
-                <img class="img-badges1" src="image/Mail.png" />
-                <img class="img-badges2" src="image/Group1.png" />
+                <img class="img-badges1" src="image/Mail.svg" />
+                <img class="img-badges2" src="image/Group1.svg" />
             </div>
             <img class="map__contacts" src="image/image7.1.png" width="925" height="465" />
+            </div>
             </div>
         </section>
     </main>
@@ -282,5 +291,6 @@
             <button class="button">REQUEST A CALL</button>
             </div>
     </footer>
+    
 </body>
 </html>
